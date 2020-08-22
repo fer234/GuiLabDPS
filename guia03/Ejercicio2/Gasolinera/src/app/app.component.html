@@ -1,0 +1,93 @@
+<!-- menu navbar con un icono de bootstrap --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" width="50md" height="50md" alt="logo">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav">
+  <a class="nav-item nav-link active" href="#">Gasolinera<span class="sr-only">(current)</span></a>
+  </div>
+  </div>
+  </nav>
+  
+  <!-- Contenido de la pagina --> 
+  <div class="container">
+  <br>
+  <h1 class="text-center">Gasolinera</h1>
+  <h3 class="text-center">Total a pagar ${{venta}}</h3>
+  <br>
+  <div class="card-group">
+  <div class="card">
+  <img class="card-img-top" src="https://i.pinimg.com/736x/50/86/b7/5086b77db14d5a540e11416288dec803.jpg" height="35" width="450" alt="Card image cap">
+  <div class="card-body">
+  <h5 class="card-title">Gasolina especial $4.25</h5>
+  <label for="nombre">Cantidad de galones</label>
+  <input type="number" class="form-control" placeholder="Ingrese la cantidad de galones" id="Especial" [(ngModel)]="cantidad" required name="Especial">
+  <br>
+  <div class="container">
+  <div class="row">
+  <div class="col text-center">
+  <button class="btn btn-danger" (click)="Gespecial()">Comprar</button>
+  </div>      
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="card">
+  <img class="card-img-top" src="https://http2.mlstatic.com/10x10ft3x3m-fondo-verde-impermeable-fotografia-video-telone-D_NQ_NP_852083-MLM32774381434_112019-F.jpg" height="35" width="450" alt="Card image cap">
+  <div class="card-body">
+  <h5 class="card-title">Gasolina Regular $4.05</h5>
+  <label for="nombre">Cantidad de galones</label>
+  <input type="number" class="form-control" placeholder="Ingrese la cantidad de galones" id="Regular" [(ngModel)]="cantidad2" required name="Regular">
+  <br>
+  <div class="container">
+  <div class="row">
+  <div class="col text-center">
+  <button class="btn btn-success" (click)="Gregular()">Comprar</button>
+  </div>      
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="card">
+  <img class="card-img-top" src="https://fondosmil.com/fondo/3898.png" height="35" width="450" alt="Card image cap">
+  <div class="card-body">
+  <h5 class="card-title">Diesel $3.96</h5>
+  <label for="nombre">Cantidad de galones</label>
+  <input type="number" class="form-control" placeholder="Ingrese la cantidad de galones" id="Diesel" [(ngModel)]="cantidad3" required name="Diesel">
+  <br>
+  <div class="container">
+  <div class="row">
+  <div class="col text-center">
+  <button class="btn btn-dark" (click)="Gdiesel()">Comprar</button>
+  </div>      
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+  <div class="row">
+  <div class="col text-center">
+  <button class="btn btn-info" (click)="limpiar()">Realizar otra compra</button>
+  </div>      
+  </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Fernando Reyes
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  
