@@ -1,9 +1,9 @@
 export class Alumno {
-        id: number= 0;
-        name: string = '';
-        lastname: string = '';
-        age: number = 0;
-        direccion: string = '';
-        telefono: number = 0;
-        correo_electronico: string = '';
+        $key: string;
+        name: string;
+        lastname: string;
+        age: string;
+        direccion: string;
+        telefono: string;
+        correo_electronico: string;
 }
